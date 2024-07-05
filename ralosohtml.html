@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ralosostyle.css">
+  <script src="ralosojava.js"></script>
+  <title>Scientific Calculator parang tanga</title>
+
+</head>
+<body>
+  <h1>Scientific Calculator</h1>
+  <div class="container">
+    <div class="calculator">
+      <form name="forms" >
+          <input name="display" id="display" type="text" disabled>
+         
+         <div>
+            <input type="button" value="1" onclick="designate('1')"> 
+            <input type="button" value="2" onclick="designate('2')">     
+            <input type="button" value="3" onclick="designate('3')">
+            <input type="button" value="+" onclick="designate('+')">
+            <input type="button" value="cos" onclick="cos()">
+            <input type="button" value="M+" onclick="addToMemory()">
+          <br>
+          
+            <input type="button" value="4" onclick="designate('4')">
+            <input type="button" value="5" onclick="designate('5')">
+            <input type="button" value="6" onclick="designate('6')">
+            <input type="button" value="-" onclick="designate('-')">
+            <input type="button" value="sin" onclick="sine()">
+            <input type="button" value="MR" onclick="recallMemory()">
+          <br>
+          
+            <input type="button" value="7" onclick="designate('7')">
+            <input type="button" value="8" onclick="designate('8')">
+            <input type="button" value="9" onclick="designate('9')">
+            <input type="button" value="*" onclick="designate('*')">
+            <input type="button" value="tan" onclick="tan()">
+            <input type="button" value="MC"
+            onclick="clearMemory()">
+          <br>
+          
+            <input type="button" value="0" onclick="designate('0')">
+            <input type="button" value="AC" onclick="ac()">
+            <input type="button" value="DEL" onclick="del()">
+            <input type="button" value="/" onclick="designate('/')">
+            <input type="button" value="(" onclick="designate('(')">
+            <input type="button" value=")"
+            onclick="designate(')')">
+          <br>
+          </div>
+          <div class="button">
+            <input type="button" value="="
+            onclick="equal()">
+            <input type="button" value="."
+            onclick="designate('.')">
+            <input type="button" value="x²"
+            onclick="square()">          
+            <input type="button" value="sqrt"
+            onclick="sqrt()">
+          </div>
+      </form>
+    </div>
+  </div>
+  <br>
+ <hr>
+ <h1>Grade Calculator</h1>
+ <br>
+ <div align="center">
+  <table>
+    <tr>
+      <td colspan="2"><input  type="text" size="7px" placeholder="RESULT" id="r1" disabled></td>
+    </tr>
+    <br><br>
+    <tr>
+      <td><input type="text" size="6px" placeholder="Math" id="math"></td>
+      <td><input type="text" size="6px" placeholder="Science" id="sci"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="6px" placeholder="English" id="eng"></td>
+      <td><input type="text" size="6px" placeholder="Electronics & Robotics" id="elec"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="6px" placeholder="Araling Panlipunan " id="ap"></td>
+      <td><input type="text" size="6px" placeholder="ICT" id="ict"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="6px" placeholder="Filipino" id="fil"></td>
+      <td><input type="text" size="6px" placeholder="E.S.P" id="esp"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="text" size="6px" placeholder="Advanced Research " id="research"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="6px" placeholder="Music" id="music"></td>
+      <td><input type="text" size="6px" placeholder="Arts" id="arts"></td> 
+    </tr>
+    <tr>
+      <td><input type="text" size="6px" placeholder="P.E." id="pe"></td> 
+      <td><input type="text" size="6px" placeholder="Health" id="health"></td>
+    </tr>
+    <br><br>
+    <tr>
+      <td><button onclick="grade()">SEE</button></td>
+      <td><button onclick="reset()">RESET</button></td>
+    </tr>
+  </table>
+</div>
+</body>
+
+</html>
